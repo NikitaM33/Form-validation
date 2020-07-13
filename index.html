@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="wrapper">
+                <form class="form">
+                    <span class="form__noFieldError"></span>
+                    <label for="name" class="form__labelName">ФИО</label>
+                    <input type="text" data-rule="name" name="name" class="form__inputName" />
+                    <span class="form__inputName__error"></span>
+                    
+                    <label for="email" class="form__labelEmail">Email</label>
+                    <input type="text" data-rule="email" name="email" class="form__inputEmail" />
+                    <span class="form__inputEmail__error"></span>
+
+                    <label for="phone" class="form__labelPhone">Телефон</label>
+                    <input type="number" data-rule="phone" name="phone" class="form__inputPhone" />
+                    <span class="form__inputPhone__error"></span>
+
+                    <button class="form__button">Отправить</button>
+                    <span class="form__networkError"></span>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <script src="./index.js"></script>
+</body>
+</html>
